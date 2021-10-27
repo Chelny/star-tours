@@ -1,0 +1,29 @@
+.autocomplete {
+  position: relative;
+}
+
+.autocomplete > ul.suggestions {
+  position: absolute;
+  right: 0;
+  left: 0;
+  overflow: scroll;
+  max-height: 350px;
+  padding: 0;
+  border: 1px solid #282c3477;
+  background-color: white;
+  list-style-type: none;
+}
+
+.autocomplete > ul.suggestions li {
+  padding: 10px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.autocomplete > ul.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #282c3455;
+}
+
+.autocomplete > ul.suggestions li:hover {
+  background-color: #282c3411;
+}
